@@ -13,3 +13,13 @@ export const STRIPE_PAYMENT_LINKS: Record<string, string> = {
   p6: "https://buy.stripe.com/cNibIU66SeTR4bG6QQ3cc06",  // 50 Credits
   p7: "https://buy.stripe.com/cNi4gs0My131fUob763cc07", // 100 Credits
 };
+
+/**
+ * Image Assets
+ * Change the filenames here if you upload files with different names.
+ * All files should be placed in the /public/images/ folder.
+ */
+export const IMAGE_ASSETS = {
+  LOGO: "logo.png",
+  CLASS_PHOTO: "turma.png",
+};

@@ -18,6 +18,7 @@ import {
 import { motion, AnimatePresence } from 'motion/react';
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
+import { STRIPE_PAYMENT_LINKS, IMAGE_ASSETS } from './Variables';
 
 function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -102,7 +103,7 @@ const Hero = () => (
       >
         <div className="relative w-full max-w-[400px] aspect-square">
           <img 
-            src="/images/logo.png" 
+            src={`/images/${IMAGE_ASSETS.LOGO}`} 
             className="w-full h-full object-contain drop-shadow-2xl" 
             alt="Year 9 2026 Logo"
             referrerPolicy="no-referrer"
@@ -122,8 +123,6 @@ const Hero = () => (
     </div>
   </section>
 );
-
-import { STRIPE_PAYMENT_LINKS } from './Variables';
 
 function PackageCard({ pkg }: { pkg: CreditPackage, key?: string | number }) {
   const handlePurchase = () => {
@@ -298,7 +297,7 @@ export default function App() {
           <div className="max-w-7xl mx-auto px-4">
             <div className="relative rounded-[3rem] overflow-hidden shadow-2xl group">
               <img 
-                src="/images/turma.png" 
+                src={`/images/${IMAGE_ASSETS.CLASS_PHOTO}`} 
                 className="w-full h-[400px] md:h-[600px] object-cover transition-transform duration-700 group-hover:scale-105" 
                 alt="Nossa Turma Year 9 2026"
                 referrerPolicy="no-referrer"
