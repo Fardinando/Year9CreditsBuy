@@ -102,7 +102,7 @@ const Hero = () => (
       >
         <div className="relative w-full max-w-[400px] aspect-square">
           <img 
-            src="/logo.png" 
+            src="/images/logo.png" 
             className="w-full h-full object-contain drop-shadow-2xl" 
             alt="Year 9 2026 Logo"
             referrerPolicy="no-referrer"
@@ -301,7 +301,7 @@ export default function App() {
           <div className="max-w-7xl mx-auto px-4">
             <div className="relative rounded-[3rem] overflow-hidden shadow-2xl group">
               <img 
-                src="/turma.png" 
+                src="/images/turma.png" 
                 className="w-full h-[400px] md:h-[600px] object-cover transition-transform duration-700 group-hover:scale-105" 
                 alt="Nossa Turma Year 9 2026"
                 referrerPolicy="no-referrer"
