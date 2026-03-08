@@ -17,7 +17,7 @@ export const STRIPE_PAYMENT_LINKS: Record<string, string> = {
 /**
  * Image Assets
  * Change the filenames here if you upload files with different names.
- * All files should be placed in the /public/Imagens/ folder.
+ * All files should be placed in the /Imagens/ folder in the root of the project.
  */
 export const IMAGE_ASSETS = {
   LOGO: "logo.png",
