@@ -20,6 +20,6 @@ export const STRIPE_PAYMENT_LINKS: Record<string, string> = {
  * All files should be placed in the /Imagens/ folder in the root of the project.
  */
 export const IMAGE_ASSETS = {
-  LOGO: "logo.png",
-  CLASS_PHOTO: "turma.png",
+  LOGO: "Gemini_Generated_Image_yb5kv4yb5kv4yb5k.png",
+  CLASS_PHOTO: "scx-5086-removebg-preview.png",
 };
