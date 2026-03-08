@@ -296,8 +296,44 @@ export default function App() {
           </div>
         </section>
 
+        {/* --- Our Class Photo Section --- */}
+        <section id="nossa-turma" className="py-20">
+          <div className="max-w-7xl mx-auto px-4">
+            <div className="relative rounded-[3rem] overflow-hidden shadow-2xl group">
+              <img 
+                src="/turma.png" 
+                className="w-full h-[400px] md:h-[600px] object-cover transition-transform duration-700 group-hover:scale-105" 
+                alt="Nossa Turma Year 9 2026"
+                referrerPolicy="no-referrer"
+                onError={(e) => {
+                  (e.target as HTMLImageElement).src = 'https://picsum.photos/seed/class-2026/1200/600';
+                }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-8 md:p-16">
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  className="max-w-2xl"
+                >
+                  <span className="inline-block px-4 py-1 bg-yellow-400 text-black text-xs font-black rounded-full uppercase tracking-widest mb-4">
+                    Juntos pela Formatura
+                  </span>
+                  <h2 className="text-4xl md:text-6xl font-black text-white mb-6 leading-tight">
+                    Nossa Turma, <br />Nosso Sonho.
+                  </h2>
+                  <p className="text-gray-300 text-lg md:text-xl leading-relaxed">
+                    Cada crédito comprado nos aproxima mais da nossa viagem de formatura. 
+                    Obrigado por fazer parte dessa jornada com o Year 9 2026!
+                  </p>
+                </motion.div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* --- Important Rules --- */}
-        <section className="py-20 bg-slate-900 text-white rounded-[3rem] mx-4">
+        <section className="py-20 bg-slate-900 text-white rounded-[3rem] mx-4 mb-20">
           <div className="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
               <h2 className="text-4xl font-black leading-tight">Regras e Políticas Importantes</h2>
@@ -342,7 +378,7 @@ export default function App() {
             </div>
             <span className="font-bold">Year 9 Credits</span>
           </div>
-          <p className="text-sm text-gray-500">© 2024 Year 9 Credits Buy 2026 Project. Todos os direitos reservados.</p>
+          <p className="text-sm text-gray-500">© Year 9 2026 Credits Buy. Todos os direitos reservados.</p>
           <div className="flex gap-6">
             <a href="#" className="p-2 bg-gray-100 rounded-full hover:bg-yellow-400 transition-colors"><Instagram className="w-5 h-5" /></a>
             <a href="#" className="p-2 bg-gray-100 rounded-full hover:bg-yellow-400 transition-colors"><Mail className="w-5 h-5" /></a>
