@@ -154,13 +154,6 @@ Integração com Stripe
 A integração foi realizada de forma simples, sem necessidade de backend personalizado.
 
 Cada botão de compra no site contém um link direto para o checkout do Stripe.
-
-Exemplo simplificado:
-
-<a href="https://buy.stripe.com/EXEMPLO">
-<button>Comprar 10 créditos</button>
-</a>
-
 Quando clicado, o usuário é redirecionado para o checkout do Stripe, onde pode concluir o pagamento com segurança.
 
 ---
